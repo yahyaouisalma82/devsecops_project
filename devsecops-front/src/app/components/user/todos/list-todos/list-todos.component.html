@@ -1,0 +1,45 @@
+<div class="card shadow">
+  <h4 class="card-header">My Todo List</h4>
+  <div class="card-body">
+    <ul class="nav nav-tabs mb-4 pb-2" role="tablist">
+      <li class="nav-item" (click)="selectTodos('all')">
+        <button
+          [ngClass]="{ active: default }"
+          class="nav-link"
+          id="allTodos"
+          data-mdb-toggle="tab"
+        >
+          All
+        </button>
+      </li>
+      <li class="nav-item" (click)="selectTodos('active')">
+        <button
+          class="nav-link"
+          id="activeTodos"
+          data-mdb-toggle="tab"
+        >
+          Active
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        (click)="selectTodos('completed')"
+      >
+        <button
+          class="nav-link"
+          id="completedTodos"
+          data-mdb-toggle="tab"
+        >
+          Completed
+        </button>
+      </li>
+    </ul>
+    <ul class="list-group" *ngFor="let todo of todos">
+      <app-todo-item
+        (DeletedItem)="deleteItemInfoList($event)"
+        [todoInput]="todo"
+        style="margin: 5px"
+      ></app-todo-item>
+    </ul>
+  </div>
+</div>

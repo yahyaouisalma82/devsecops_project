@@ -1,0 +1,45 @@
+
+ ::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+ }
+
+ ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 2px;
+ }
+.scrollable {
+    overflow: scroll;
+    height: 340px;
+}
+
+.center{
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    justify-content: center;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.btn-center{
+    position: absolute;
+    left: 40%;
+}
+
+.title{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    left: 5%;
+}
+.profile-description{
+    padding-left: 10px;
+    font-size: 18px;
+    color: white;
+}
+.author{
+    left: 70%;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+}
