@@ -11,32 +11,26 @@ import { AdministrationComponent } from "./administration.component";
 import { DashbordcomponementComponent } from "./dashbordcomponement/dashbordcomponement.component";
 import { UserListcomponementComponent } from "./user-listcomponement/user-listcomponement.component";
 
-
 /**
  * The adminModule class
  */
 @NgModule({
-    imports: [
-        CommonModule,
-        BrowserAnimationsModule, // required animations module
+  imports: [
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
     BrowserModule,
     FormsModule,
     ReactiveFormsModule, 
-    FormsModule,
     HttpClientModule,
     RouterModule,
-        ChartModule,
-    ],
-    declarations: [
-    AdministrationComponent,
-    DashbordcomponementComponent,
-    AdminProfilecomponementComponent,
-    UserListcomponementComponent,
-    ],
-    providers: [],
-    entryComponents:[
-        AdministrationComponent,
-    ],
+    // ChartModule,
+  ],
+  declarations: [ 
+    // DashbordcomponementComponent,
+    // AdminProfilecomponementComponent,
+    // UserListcomponementComponent,
+  ],
+  providers: [],
+  entryComponents: [AdministrationComponent],
 })
-export class AdminModule {
-}
+export class AdminModule {}

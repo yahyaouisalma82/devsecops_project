@@ -1,5 +1,4 @@
-// Other Modules : 
-import {ChartModule} from 'primeng/chart';
+// Other Modules :  
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
@@ -45,21 +44,19 @@ import { AdminService } from "./components/administration/services/admin.service
 import { RechercheUserComponent } from './components/administration/recherche-user/recherche-user.component';
 import { LandingComponent } from './components/spacy/landing/landing.component';
 import { HtmlToTextPipe } from './pipes/html-to-text.pipe';
+import { CommonModule } from '@angular/common';
+import { ChartModule } from "primeng/chart";
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    // User
+    LandingComponent, 
     HomeComponent,
     RegisterationComponent,
-    AuthentificationComponent,
-    //// Focus World : 
-    TimerComponent,
-    ////////////////////////////
-    // admin
+    AuthentificationComponent, 
+    TimerComponent,  
     AdministrationComponent,
     DashbordcomponementComponent,
     AdminProfilecomponementComponent,
@@ -82,8 +79,7 @@ import { HtmlToTextPipe } from './pipes/html-to-text.pipe';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    AppRoutingModule,
-    ChartModule,
+    AppRoutingModule, 
     BsDropdownModule.forRoot(),
     ProgressbarModule.forRoot(),
     TooltipModule.forRoot(),
@@ -95,6 +91,8 @@ import { HtmlToTextPipe } from './pipes/html-to-text.pipe';
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     CollapseModule.forRoot(),
+    CommonModule,
+    // ChartModule
   ],
   providers: [AdminService,authInterceptorProviders],
   bootstrap: [AppComponent]
