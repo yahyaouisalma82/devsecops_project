@@ -44,8 +44,7 @@ import { AdminService } from "./components/administration/services/admin.service
 import { RechercheUserComponent } from './components/administration/recherche-user/recherche-user.component';
 import { LandingComponent } from './components/spacy/landing/landing.component';
 import { HtmlToTextPipe } from './pipes/html-to-text.pipe';
-import { CommonModule } from '@angular/common';
-import { ChartModule } from "primeng/chart";
+import { CommonModule } from '@angular/common'; 
 
 
 
@@ -91,8 +90,7 @@ import { ChartModule } from "primeng/chart";
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     CollapseModule.forRoot(),
-    CommonModule,
-    // ChartModule
+    CommonModule, 
   ],
   providers: [AdminService,authInterceptorProviders],
   bootstrap: [AppComponent]
