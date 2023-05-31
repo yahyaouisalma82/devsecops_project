@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { articleModel } from '../Models/articleModel';
-import { ArticleService } from './article.service';
-
+import { ArticleService } from './article.service'; 
 @Component({
   selector: 'app-all-articles',
   templateUrl: './all-articles.component.html',
@@ -14,7 +13,7 @@ export class AllArticlesComponent implements OnInit {
 
   ngOnInit(): void {  
     this.articles=this.articleService.getArticles()
-    // console.log(this.articles,this.articles[0].title);
+    console.log("oo",this.articles);
   }
   readMe(){
     this.router.navigateByUrl('/re');

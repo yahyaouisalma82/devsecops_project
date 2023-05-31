@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { ConstantURL } from "src/app/ConstantsUrl";
-import { articleModel } from "../Models/articleModel";
+import { articleModel } from "../Models/articleModel"; 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -65,8 +65,12 @@ export class ArticleService {
     this.articles = [];
     this.http.get(ConstantURL.ARTICLES_LIST_URL).subscribe((article) => {
       Object.keys(article).map((i) => {
+        console.log("heey");
         this.articles.push(article[i]);
       });
+      console.log('====================================');
+      console.log(this.articles);
+      console.log('====================================');
     });
     return this.articles;
   }

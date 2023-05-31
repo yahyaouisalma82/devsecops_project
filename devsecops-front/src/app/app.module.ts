@@ -44,6 +44,7 @@ import { UserListcomponementComponent } from './components/administration/user-l
 import { AdminService } from "./components/administration/services/admin.service";
 import { RechercheUserComponent } from './components/administration/recherche-user/recherche-user.component';
 import { LandingComponent } from './components/spacy/landing/landing.component';
+import { HtmlToTextPipe } from './pipes/html-to-text.pipe';
 
 
 
@@ -72,6 +73,7 @@ import { LandingComponent } from './components/spacy/landing/landing.component';
     ArticleComponent,
     AllArticlesComponent,
     AddArticleComponent,
+    HtmlToTextPipe
   ],
   imports: [
     BrowserAnimationsModule, // required animations module
