@@ -22,8 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "allowedCommonJsDependencies": [
-              "chart.js",
+            "allowedCommonJsDependencies": [ 
               "nouislider"
             ],
             "assets": [
@@ -38,8 +37,7 @@
               "src/assets/scss/blk-design-system.scss",
               "src/assets/demo/demo.css"
             ],
-            "scripts": [ 
-              "./node_modules/chart.js/dist/chart.js"
+            "scripts": [  
            ]
           },
           "configurations": {
